@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: docker
+      DEBUG: "false"
+      DATABASE_URL: sqlite:////app/data/pocket_ledger.db
+      JWT_SECRET_KEY: development-only-secret-key-change-before-production
+    volumes:
+      - pocket_ledger_data:/app/data
+
+volumes:
+  pocket_ledger_data:
