@@ -32,8 +32,8 @@ python --version
 克隆仓库并进入项目目录：
 
 ```powershell
-git clone https://github.com/konijiwas/reimagined-octo-potato.git
-cd reimagined-octo-potato
+git clone https://github.com/konijiwas/pocket-ledger-api.git
+cd pocket-ledger-api
 ```
 
 如果仓库是 Private，当前 GitHub 账号必须拥有访问权限。
@@ -114,8 +114,8 @@ Ctrl + C
 ## 三、Linux 和 macOS 本地运行
 
 ```bash
-git clone https://github.com/konijiwas/reimagined-octo-potato.git
-cd reimagined-octo-potato
+git clone https://github.com/konijiwas/pocket-ledger-api.git
+cd pocket-ledger-api
 python3 -m venv .venv
 ./.venv/bin/python -m pip install -r requirements.txt
 ./.venv/bin/python -m uvicorn app.main:app --reload
